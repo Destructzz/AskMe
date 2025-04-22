@@ -39,5 +39,6 @@ func InitDB(){
 }
 
 func Migrate(){
+	
 	log.Println("Migration complited")
 }
