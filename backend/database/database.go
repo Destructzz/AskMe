@@ -39,6 +39,6 @@ func InitDB(){
 }
 
 func Migrate(){
-	
+	DB.AutoMigrate(&User{}, &Poll{}, &Card{}, &CardField{})
 	log.Println("Migration complited")
 }

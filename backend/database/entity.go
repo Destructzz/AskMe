@@ -22,7 +22,7 @@ type Card struct{
     Poll *Poll `gorm:"foreignKey:PollId;constraint:OnUpdate:CASCADE,OnDelete:CASCADE;" json:"poll"`
 }
 
-type Card_Field struct {
+type CardField struct {
     Id         uint   `gorm:"primaryKeyм;autoIncrement" json:"id"`
     CardId    uint   `gorm:"not null;index" json:"card_id"`
     Text     string   `gorm:"size:255;not null" json:"header"`
