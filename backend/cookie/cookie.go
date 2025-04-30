@@ -7,7 +7,6 @@ import (
 	"errors"
 )
 const (
-	// TokenLength defines the length of the generated token in bytes
 	TokenLength = 45
 	// CookieName is the name of the cookie where the token will be stored
 	CookieName = "token"
