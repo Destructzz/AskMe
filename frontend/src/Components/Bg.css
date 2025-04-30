@@ -10,15 +10,15 @@
 }
 
 .glow {
-    position: absolute;
+    position: fixed;
     bottom: -300px;
     left: 50%;
     width: 800px;
     height: 800px;
-    background: rgba(138, 43, 226, 0.7);
+    background: rgba(247, 0, 255, 0.395);
     border-radius: 50%;
     transform: translateX(-50%);
-    filter: blur(200px);
+    filter: blur(150px);
     animation: glow 6s ease-in-out infinite;
 }
 

@@ -113,7 +113,7 @@ const CreatePoll: React.FC = () => {
                 {poll.options.map((option, index) => (
                   <div key={index} className="flex items-center gap-2 mb-2">
                     <input
-                      className="px-4 py-2 border border-white outline-none focus:border-transparent rounded w-full bg-black text-white focus:bg-white focus:text-black min-h-[100px] transition-all duration-300"
+                      className="px-4 py-2 border-[2px]  border-white outline-none focus:border-transparent rounded-xl w-full bg-black text-white focus:bg-white focus:text-black min-h-[100px] transition-all duration-300"
                       value={option}
                       onChange={(e) =>
                         handleOptionChange(poll.id, index, e.target.value)
@@ -122,13 +122,13 @@ const CreatePoll: React.FC = () => {
                     {index === poll.options.length - 1 ? (
                       <div className="flex flex-col gap-1">
                         <button
-                          className="bg-white text-black rounded px-2 py-1 w-8 transition-all hover:scale-110"
+                          className="bg-white text-black rounded px-2 py-1.5 w-9 transition-all hover:scale-110"
                           onClick={() => removeOption(poll.id, index)}
                         >
                           -
                         </button>
                         <button
-                          className="bg-white text-black rounded px-2 py-1 w-8 transition-all hover:scale-110"
+                          className="bg-white text-black rounded px-2 py-1.5 w-9 transition-all hover:scale-110"
                           onClick={() => addOption(poll.id)}
                         >
                           +
@@ -136,7 +136,7 @@ const CreatePoll: React.FC = () => {
                       </div>
                     ) : (
                       <button
-                        className="bg-white text-black rounded px-2 py-1 w-8 transition-all hover:scale-110"
+                        className="bg-white text-black rounded px-2 py-1.5 w-9 transition-all hover:scale-110"
                         onClick={() => removeOption(poll.id, index)}
                       >
                         -
